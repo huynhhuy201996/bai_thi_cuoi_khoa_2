@@ -2,7 +2,7 @@ import React from 'react'
 
 const Active = () => {
     return (
-        <div>Active</div>
+        <h1 style={{ textAlign: 'center' }}>Active</h1>
     )
 }
 

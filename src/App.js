@@ -9,15 +9,17 @@ import { Link } from 'react-router-dom';
 const App = () => {
   return (
     <BrowserRouter  >
-      <h1 style={{ textAlign: 'center' }}>#Todo</h1>
-      <div style={{ fontSize: '100', display: 'flex', justifyContent: 'space-around', margin: 10 }}>
-        <Link to='/HomeScreen'>All</Link>
-        <Link to='/Active'>Active</Link>
-        <Link to='/compele'>Complete</Link>
+      <div>
+        <h1 style={{ textAlign: 'center' }}>To do List</h1>
+        <div style={{ fontSize: '100', display: 'flex', justifyContent: 'space-around', margin: 25 }}>
+          <Link to='/'>All</Link>
+          <Link to='/Active'>Active</Link>
+          <Link to='/complete'>Complete</Link>
+        </div>
 
       </div>
       <Routes>
-        <Route path='/HomeScreen' element={<HomeScreen />} />
+        <Route path='/' element={<HomeScreen />} />
         <Route path='/Active' element={<Active />} />
         <Route path='/Complete' element={<Complete />} />
       </Routes>

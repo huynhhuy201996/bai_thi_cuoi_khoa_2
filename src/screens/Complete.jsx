@@ -1,8 +1,9 @@
+import { TextalignJustifycenter } from 'iconsax-react';
 import React from 'react'
 
 const Complete = () => {
     return (
-        <div>Complete</div>
+        <h1 style={{ textAlign: 'center' }}>Complete</h1>
     )
 }
 
